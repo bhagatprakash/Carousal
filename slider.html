@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- meta  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>carousel</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- css link -->
+    <link rel="stylesheet" href="./css/owl.carousel.css" />
+    <link rel="stylesheet" href="./css/owl.theme.green.css" />
+    <link rel="stylesheet" href="./css/animate.css" />
+
+    <!-- js link  -->
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <style>
+      /* .container {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+      } */
+      .container {
+        width: 100%;
+        height: 500px;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      i .contant h2 {
+        font-size: 60px;
+        margin-top: 260px;
+        color: green;
+      }
+      .contant h2 span {
+        font-size: 60px;
+        color: green;
+        font-family: sans-serif;
+      }
+      .owl-carousel {
+        width: 48%;
+        margin-top: 50px;
+      }
+      .short {
+        font-size: 25px;
+      }
+      .short-1 {
+        font-size: large;
+      }
+      .item {
+        display: flex;
+        flex-wrap: wrap;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- <div class="contant"></div> -->
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <div class="phr">
+            <h2>Zay <span>eCommerce</span></h2>
+            <p class="short">Tiny and Perfect eCommerce Template</p>
+            <p class="short-1">
+              Zay Shop is an eCommerce HTML5 CSS template with latest version of
+              Bootstrap 5 (beta 1). This template is 100% free provided by
+              TemplateMo website. Image credits go to Freepik Stories, Unsplash
+              and Icons 8.
+            </p>
+          </div>
+          <img src="./images/slider-1.jpg" alt="pik-1" />
+        </div>
+
+        <div class="item">
+          <div class="phr">
+            <h2>Zay <span>eCommerce</span></h2>
+            <p class="short">Tiny and Perfect eCommerce Template</p>
+            <p class="short-1">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+              vitae consequuntur magnam temporibus! Amet, nihil illum ipsum eum
+              ea iusto, repellendus, dolor placeat quibusdam ipsa beatae ipsam
+              delectus ducimus accusantium.
+            </p>
+          </div>
+          <img src="./images/slider-2.jpg" alt="pik-2" />
+        </div>
+        <div class="item">
+          <div class="phr">
+            <h2>Zay <span>eCommerce</span></h2>
+            <p class="short">Tiny and Perfect eCommerce Template</p>
+            <p class="short-1">
+              consequuntur magnam temporibus! Amet, nihil illum ipsum eum ea
+              iusto, repellendus, dolor placeat quibusdam ipsa beatae ipsam
+              delectus ducimus accusantium.
+            </p>
+          </div>
+          <img src="./images/slider-3.jpg" alt="pik-3" />
+        </div>
+      </div>
+    </div>
+
+    <script>
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+          items: 1,
+          margin: 20,
+          nav: true,
+          //   mouseDrag: false,
+          //   stagePadding: 50,
+          autoplay: true,
+          autoplayTimeout: 2000,
+          animateOut: "animateOut",
+          animateIn: "animateIn",
+          //   responsive: {
+          //     0: {
+          //       items: 1,
+          //       nav: true,
+          //     },
+          //     600: {
+          //       items: 3,
+          //       nav: false,
+          //     },
+          //     1000: {
+          //       items: 5,
+          //       nav: true,
+          //       loop: false,
+          //     },
+          //   },
+        });
+      });
+    </script>
+  </body>
+</html>
